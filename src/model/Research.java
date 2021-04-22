@@ -28,7 +28,7 @@ public class Research {
 
 	}
 
-	         //Insert Buyers
+	         //Insert Research
 			public String insertResearch(String Res_ID, String Res_type, String Res_note, String Res_price, String Ruser_ID)
 			{ 
 				Connection con = connect();
@@ -73,7 +73,7 @@ public class Research {
 				return output; 
 			}
 
-			//Read the Buyers
+			//Read the Research
 			public String readResearch()
 			{ 
 				 String output = ""; 
@@ -122,10 +122,10 @@ public class Research {
 					 // buttons
 					 output += "<td><input name='btnUpdate' " 
 					 + " type='button' value='Update' onclick = ></td>"
-					 + "<td><form method='post' action='buyers.jsp'>"
+					 + "<td><form method='post' action='Research.jsp'>"
 					 + "<input name='btnRemove' " 
 					 + " type='submit' value='Delete'>"
-					 + "<input name='BuyerID' type='hidden' " 
+					 + "<input name='ResearchID' type='hidden' " 
 					 + " value='" + Res_ID + "'>" 
 					 + "</form></td></tr>"; 
 				 } 
@@ -146,7 +146,7 @@ public class Research {
 				return output; 
 			}
 
-	// Update buyers in the table
+	// Update Research in the table
 	public String updateResearch(String Res_ID, String Res_type, String Res_note, String Res_price)
 			{ 
 				 String output = ""; 
@@ -185,7 +185,7 @@ public class Research {
 				 return output; 
 				 }
 
-	// Delete buyer in the table
+	// Delete Research in the table
 	public String deleteResearch(String Res_ID) {
 		String output = "";
 
