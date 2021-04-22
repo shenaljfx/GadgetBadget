@@ -26,13 +26,13 @@ public class ResearchService {
 		return ResearchObj.readResearch();
 	}
   
-	// inserBuyer() method
+	// inserResearch() method
 	
 	@POST
 	@Path("/") 
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED) 
 	@Produces(MediaType.TEXT_PLAIN) 
-	public String insertBuyer(@FormParam("Res_ID") String Res_ID, 
+	public String insertResearch(@FormParam("Res_ID") String Res_ID, 
 	 @FormParam("Res_type") String Res_type, 
 	 @FormParam("Res_note") String Res_note, 
 	 @FormParam("Res_price") String Res_price, 
@@ -44,7 +44,7 @@ public class ResearchService {
 	 return output; 
 	}
 	
-	//updateBuyer() method
+	//updateResearch() method
 	
 	@PUT
 	@Path("/") 
@@ -66,7 +66,7 @@ public class ResearchService {
 	 return output; 
 	}
 	
-	// deleteBuyer() method
+	// deleteResearch() method
 	
 	@DELETE
 	@Path("/") 
