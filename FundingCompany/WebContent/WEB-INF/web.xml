@@ -11,6 +11,10 @@
 		<servlet-name>Jersey Web Application</servlet-name>
 		<url-pattern>/fundServices/*</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Jersey Web Application</servlet-name>
+		<url-pattern>/reqServices/*</url-pattern>
+	</servlet-mapping>
   
   
   
