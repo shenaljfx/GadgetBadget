@@ -13,7 +13,7 @@ public class Buyer {
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con= DriverManager.getConnection("jdbc:mysql://localhost:3306/pafproject", "root", "");
+			con= DriverManager.getConnection("jdbc:mysql://localhost:3306/paf_project", "root", "");
 
 			// For testig
 			System.out.print("Succesfully connected");
